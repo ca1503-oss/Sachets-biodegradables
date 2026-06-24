@@ -1,98 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Sachets Biodegradables</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f9f4;
-            color: #333;
-        }
-        header {
-            background-color: #2e8b57;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #3cb371;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #2e8b57;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        .card {
-            background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sachets Biodegradables</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0fdf4;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* NAV */
+nav {
+    background: #15803d;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #bbf7d0;
+}
+
+/* SECCIONES */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* BENEFICIOS GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.beneficio {
+    background: #dcfce7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #14532d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* BOTÓN */
+button {
+    background: #22c55e;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #16a34a;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Sachets Biodegradables</h1>
-    <p>Cuidando el planeta, un envase a la vez 🌍</p>
+    <h1>🌱 Sachets Biodegradables</h1>
+    <p>Innovación ecológica para un futuro sostenible</p>
 </header>
 
 <nav>
     <a href="#que">¿Qué son?</a>
-    <a href="#importancia">Importancia</a>
+    <a href="#problema">Problema</a>
     <a href="#beneficios">Beneficios</a>
+    <a href="#impacto">Impacto</a>
 </nav>
 
 <section id="que">
     <div class="card">
-        <h2>¿Qué son los sachets biodegradables?</h2>
+        <h2>¿Qué son?</h2>
         <p>
-            Son pequeños envases hechos de materiales que se descomponen de forma natural 
-            en el ambiente, reduciendo la contaminación plástica.
+            Los sachets biodegradables son envases diseñados para descomponerse de manera natural,
+            reduciendo la contaminación causada por plásticos tradicionales.
         </p>
     </div>
 </section>
 
-<section id="importancia">
+<section id="problema">
     <div class="card">
-        <h2>¿Por qué son importantes?</h2>
+        <h2>El problema del plástico</h2>
         <p>
-            Los sachets tradicionales contaminan durante años. En cambio, los biodegradables 
-            ayudan a disminuir el impacto ambiental y protegen los ecosistemas.
+            Los sachets convencionales tardan más de 100 años en degradarse, contaminando océanos,
+            dañando animales y afectando el equilibrio ambiental.
         </p>
     </div>
 </section>
 
 <section id="beneficios">
+    <h2>Beneficios</h2>
+    <div class="grid">
+        <div class="beneficio">♻️ Ecológicos</div>
+        <div class="beneficio">🌍 Reducen contaminación</div>
+        <div class="beneficio">⚡ Degradación rápida</div>
+        <div class="beneficio">💡 Innovación sostenible</div>
+    </div>
+</section>
+
+<section id="impacto">
     <div class="card">
-        <h2>Beneficios</h2>
-        <ul>
-            <li>Reducen la contaminación</li>
-            <li>Se degradan rápidamente</li>
-            <li>Son amigables con el medio ambiente</li>
-            <li>Fomentan el consumo responsable</li>
-        </ul>
+        <h2>Impacto positivo</h2>
+        <p>
+            El uso de sachets biodegradables contribuye a un planeta más limpio, promueve hábitos responsables
+            y reduce la huella ambiental.
+        </p>
+        <button onclick="mostrarMensaje()">Haz clic aquí</button>
+        <p id="mensaje"></p>
     </div>
 </section>
 
 <footer>
-    <p>Proyecto ecológico | 2026</p>
+    <p>Proyecto escolar | Medio Ambiente 🌿</p>
 </footer>
+
+<script>
+function mostrarMensaje() {
+    document.getElementById("mensaje").innerHTML =
+    "🌱 ¡Estás ayudando a cuidar el planeta!";
+}
+</script>
 
 </body>
 </html>
